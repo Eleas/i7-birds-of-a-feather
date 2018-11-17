@@ -74,7 +74,24 @@ The printed name of the Chip Shop Interior is "Inside your Chip Shop".
 
 Chapter - The Window
 
-The chip-shop window is a scenery backdrop. It is in the Chip Shop Interior and the Central Pier. The chip-shop window can be openable. The chip-shop window is openable. The chip-shop window can be open or closed. It is closed.
+The chip-shop window is an openable scenery container. It is in the Chip Shop Interior. Understand "shutter" or "chip shop shutter/window" as the chip-shop window. It is closed.
+
+After deciding the scope of the player when the location is the Central Pier: 
+	place chip-shop window in scope. 
+
+Rule for reaching inside the Chip Shop Interior:
+	if the noun is the closed chip-shop window:
+		if the current action is not the action of opening the noun:
+			allow access;
+		say "That only opens from the inside.";
+		deny access;
+	if the noun is in the Chip Shop Interior:
+		say "Better to go by the door like you normally do.";
+	deny access.
+
+
+
+Instead of closing the open chip-shop window, say "You've barely been open for business as it is."
 
 The frier is a fixed in place device in the Chip Shop Interior.
 
@@ -147,6 +164,7 @@ Book - The Ghastly Gull
 
 [Sinister Seagull, Avian Atavism, Filcher of Fishies, Malodorous Menace... and possible ally?]
 The Seagull is an animal. The Seagull can be injured. The Seagull can be antagonistic or friendly. The Seagull is antagonistic.
+The seagull is in the Central Pier. The initial appearance of the Seagull is "That horrid seagull is sitting a distance off, staring into the distance yet somehow giving the impression of watching you."
 
 [Scene: the bird call is coming from INSIDE THE SHOP]
 
