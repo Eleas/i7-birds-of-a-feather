@@ -62,25 +62,25 @@ In the opposite direction, towards land and the curve of the driveway, you spot 
 
 The printed name of the Central Pier is "Pier, by the Chip Shop". 
 
-Before trying going west in the Central Pier, say "No. If you're seen going by the RoBodega, someone's going to think you're a customer." instead.
+Before trying going west in the Central Pier, say "No. If you're seen going by the RoBodega, someone's going to take you for a customer." instead.
 
 
 Part - The fish-n-chip shop
 
 The Chip Shop Interior is inside from the Central Pier. The description is "[first time]You duck inside and sigh, vapor pluming from your lips. It's dark, but a glance at the blinking light on the freezer assures you the power's still good. A few pulls on the old crank, and chill daylight seeps in through the opening shutters.[paragraph break][only]Dad's fish-n-chip shop has seen better days. Not much larger than a phone booth, it offers shelter from sudden squalls and the cold (and, in theory, the sun). The paint’s peeling and the door needs to be repaired, but it’s all yours.
 
-The insides are cramped as usual, but you've got everything close at hand, including a heavy-duty frier -- your pride and joy -- and a fridge of surprising capacity. The door’s ajar, letting in sunlight[first time].[paragraph break]Time to go to work[only]." 
+The insides are cramped as usual, but you've got everything close at hand, including a heavy-duty [frier] (your pride and joy), a coffin model [freezer], and a [fridge] of surprising capacity. The door’s ajar, letting in sunlight[first time].[paragraph break]Time to go to work[only]." 
 The printed name of the Chip Shop Interior is "Inside your Chip Shop".
 
 Chapter - The Window
 
-The chip-shop window is an openable scenery container. It is in the Chip Shop Interior. Understand "shutter" or "chip shop shutter/window" as the chip-shop window. It is closed.
+The shop window is an openable scenery container. It is in the Chip Shop Interior. Understand "shutter" or "chip shop shutter/window" as the shop window. It is closed.
 
 After deciding the scope of the player when the location is the Central Pier: 
-	place chip-shop window in scope. 
+	place shop window in scope. 
 
 Rule for reaching inside the Chip Shop Interior:
-	if the noun is the closed chip-shop window:
+	if the noun is the closed shop window:
 		if the current action is not the action of opening the noun:
 			allow access;
 		say "That only opens from the inside.";
@@ -91,11 +91,14 @@ Rule for reaching inside the Chip Shop Interior:
 
 
 
-Instead of closing the open chip-shop window, say "You've barely been open for business as it is."
+
+Instead of closing the open shop window, say "You've barely been open for business as it is."
 
 The frier is a fixed in place device in the Chip Shop Interior.
 
-The freezer is a container in the Chip Shop Interior. It is closed. It is openable. Understand "fridge/ice" or "box/chest/crate" as the freezer.
+The fridge is a fixed in place container in the Chip Shop Interior. It is closed and openable. The description is "A wall-mounted cupboard style fridge molded in off-white plastic. In its stark utilitarianism (one door, one handle, no label) it somehow exudes an unsentimental can-do attitude."
+
+The freezer is a fixed in place container in the Chip Shop Interior. It is closed and openable. Understand "ice" or "box/chest/crate" as the freezer.
 The description is "Old, but still ticking along. This square-shaped white chest has been here since Dad's day, and other than the occasional build-up of ice along its sides, it's been ticking along like clockwork. A small green diode on its side blinks regularly. The lid [if closed]is shut[otherwise]stands open, and inside you see [the list of things in the freezer][end if]."
 	
 Dispensing relates one thing to various things. The verb to dispense means the dispensing relation. 
@@ -115,13 +118,12 @@ Every fish is dispensed by a whole bunch of fish.
 
 Definition: a thing is ready to dispense if it dispenses something that is off-stage.
 
-when play begins: say the list of things that are ready to dispense.
 Instead of taking something which dispenses something when the noun is ready to dispense:
 	let the candidate be a random thing dispensed by the noun;
 	now the candidate is in the holder of the noun;
 	try taking the candidate.
 
-The oil is a fixed in place container in the Chip Shop Interior. 
+The oil is a fixed in place scenery container in the Chip Shop Interior. 
 Instead of inserting something into the frier, try inserting the noun into the oil. 
 The oil can be gelid, lukewarm, hot, or sizzling (this is its temperature).
 The description of the oil is "The faintly golden oil is [temperature][if the oil holds something][list of things in the oil][end if]."
@@ -195,7 +197,7 @@ Getting ready for business is a scene. Getting ready for business begins when pl
 
 [We start slow, by unlocking the chip shop, opening the window, starting up the fryer. Once the fryer is on, we can't leave until we've opened the window.]
 
-Getting ready for business ends when the chip-shop window is open and the frier is switched on.
+Getting ready for business ends when the shop window is open and the frier is switched on.
 
 Breakfast in Hell is a scene. Breakfast in Hell begins when Getting ready for business ends.
 
@@ -234,6 +236,7 @@ Follow the birdie is a scene. Follow the birdie begins when Burying the hatchet 
 Follow the birdie ends when the RoBodega Site is visited.
 
 A plan most cunning is a scene. A plan most cunning begins when Follow the birdie has ended and the player is in Central Pier.
+
 
 
 
